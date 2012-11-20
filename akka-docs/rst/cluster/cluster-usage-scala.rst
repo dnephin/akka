@@ -14,7 +14,8 @@ Preparing Your Project for Clustering
 
 The Akka cluster is a separate jar file. Make sure that you have the following dependency in your project::
 
-  "com.typesafe.akka" %% "akka-cluster-experimental" % "@version@" @crossString@
+  "com.typesafe.akka" %% "akka-cluster-experimental" % 
+    "@version@" @crossString@
 
 If you are using the latest nightly build you should pick a timestamped Akka
 version from
@@ -496,7 +497,8 @@ Run it without parameters to see instructions about how to use the script::
                 is-available - Checks if the member node is available
                   is-running - Checks if the member node is running
              has-convergence - Checks if there is a cluster convergence
-  Where the <node-url> should be on the format of 'akka://actor-system-name@hostname:port'
+  Where the <node-url> should be on the format of 
+    'akka://actor-system-name@hostname:port'
 
   Examples: bin/akka-cluster localhost:9999 is-available
             bin/akka-cluster localhost:9999 join akka://MySystem@darkstar:2552
